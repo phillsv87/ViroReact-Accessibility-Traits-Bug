@@ -21,6 +21,12 @@ target 'virobug' do
   post_install do |installer|
     flipper_post_install(installer)
   end
+
+  
+  # Viro
+  pod 'ViroReact', :path => '../node_modules/react-viro/ios/'
+  pod 'ViroKit_static_lib', :path => '../node_modules/react-viro/ios/dist/ViroRenderer/static_lib'
+
 end
 
 target 'virobug-tvOS' do
